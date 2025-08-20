@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="music-player">
+    <h2>🎵 Classic Music Player</h2>
+
+    <!-- Song Info -->
+    <div class="song-info">
+      <h3 id="title">Select a Song</h3>
+      <p id="artist">---</p>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev"><i class="fa-solid fa-backward"></i></button>
+      <button id="play-pause"><i class="fa-solid fa-play"></i></button>
+      <button id="next"><i class="fa-solid fa-forward"></i></button>
+      <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-container">
+      <input type="range" id="progress" value="0" min="0" step="1">
+    </div>
+
+    <!-- Volume -->
+    <div class="volume-container">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <!-- Playlist -->
+    <ul id="playlist">
+      <li data-index="0">🎶 Song 1 - Pop</li>
+      <li data-index="1">🎸 Song 2 - Rock</li>
+      <li data-index="2">🎻 Song 3 - Classical</li>
+      <li data-index="3">🎤 Song 4 - Jazz</li>
+      <li data-index="4">🎹 Song 5 - Instrumental</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
